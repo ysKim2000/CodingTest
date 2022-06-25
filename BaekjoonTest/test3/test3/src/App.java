@@ -3,16 +3,21 @@ import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        int score[] = new int[num];
-        int sum = 0, max = 0;
+        int suNo = sc.nextInt();
+        int quizNo = sc.nextInt();
 
-        for(int i=0; i<num;i++){
-            score[i] = sc.nextInt();
-            if(score[i] > max) max = score[i];
-            sum += score[i];
+        int[] arr = new int[suNo + 1];
+        arr[0]=0;
+
+        for (int i = 1; i <= suNo; i++) {
+            arr[i] = arr[i - 1] + sc.nextInt();
         }
-        System.out.println(sum * 100.0 / max / num);
+        for(int i =0; i< quizNo; i++){
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            System.out.println(arr[y] - arr[x - 1]);
+        }
+
         sc.close();
     }
 }
