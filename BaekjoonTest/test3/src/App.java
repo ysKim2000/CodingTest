@@ -8,7 +8,6 @@ public class App {
 
         int[] arr = new int[suNo + 1];
         arr[0]=0;
-
         for (int i = 1; i <= suNo; i++) {
             arr[i] = arr[i - 1] + sc.nextInt();
         }
@@ -17,7 +16,6 @@ public class App {
             int y = sc.nextInt();
             System.out.println(arr[y] - arr[x - 1]);
         }
-
         sc.close();
     }
 }
