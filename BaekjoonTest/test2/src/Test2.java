@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class App {
+public class Test2 {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
