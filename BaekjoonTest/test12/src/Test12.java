@@ -8,7 +8,6 @@ public class Test12 {
         myCode();
         // code();
     }
-
     public static void myCode() throws Exception { // 시간 초과
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int num = Integer.parseInt(br.readLine());
