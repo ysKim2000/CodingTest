@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 
 // 4단계 학습
-public class App {
+public class Test16 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
