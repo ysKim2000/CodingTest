@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class App {
+public class Test17 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         char[] arr = sc.nextLine().toCharArray();
