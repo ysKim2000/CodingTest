@@ -5,11 +5,7 @@ import sys
 input = sys.stdin.readline
 
 
-def solve():
-    N = int(input()) # 재료의 갯수
-    M = int(input()) # 갑옷을 만드는데 필요한 수
-    arr = sorted(list(map(int, input().split()))) # 고유한 번호
-
+def solution_07(N, M, arr):
     cnt = 0
     start = 0
     end = N - 1
@@ -25,5 +21,8 @@ def solve():
 
     print(cnt)
 
-if __name__ == "__main__":
-    solve()
+
+N = int(input()) # 재료의 갯수
+M = int(input()) # 갑옷을 만드는데 필요한 수
+arr = sorted(list(map(int, input().split()))) # 고유한 번호
+solution_07(N, M, arr)

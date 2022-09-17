@@ -5,10 +5,7 @@ import sys
 input = sys.stdin.readline
 
 
-def solve():
-    N = int(input()) 
-    arr = sorted(list(map(int, input().split()))) 
-
+def solution_08(N, arr):
     cnt = 0
 
     for i in range(N):
@@ -26,5 +23,7 @@ def solve():
                 end -= 1
     print(cnt)
 
-if __name__ == "__main__":
-    solve()
+
+N = int(input()) 
+arr = sorted(list(map(int, input().split()))) 
+solution_08(N, arr)

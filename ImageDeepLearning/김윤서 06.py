@@ -5,8 +5,7 @@ import sys
 input = sys.stdin.readline
 
 
-def solve():
-    N = int(input())
+def solution_06(N):
     cnt = 0
     sum = 0
     start = 0
@@ -25,5 +24,5 @@ def solve():
     print(cnt)
 
 
-if __name__ == "__main__":
-    solve()
+N = int(input())
+solution_06(N)
