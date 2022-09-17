@@ -7,11 +7,11 @@ input = sys.stdin.readline
 
 def solve():
     N = int(input())
-    cnt = 1
+    cnt = 0
     sum = 0
     start = 0
     end = 0
-    while end <= N / 2 + 1:
+    while end <= N:
         if sum < N:
             end += 1
             sum += end
