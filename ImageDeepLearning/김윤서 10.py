@@ -1,6 +1,3 @@
-# 12891번
-# DNA 비밀번호
-
 import sys
 from collections import deque
 input = sys.stdin.readline
