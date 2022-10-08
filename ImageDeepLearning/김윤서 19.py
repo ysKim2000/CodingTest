@@ -30,6 +30,3 @@ def quick_sort(arr, K):
 N, K = map(int, stdin.readline().split())
 A = list(map(int, stdin.readline().split()))
 solution_19(K, A)
-
-
-
