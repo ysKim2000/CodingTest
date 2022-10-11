@@ -1,15 +1,5 @@
-# 1427번
-# 선택 정렬
-
 import sys
 input = sys.stdin.readline
-
-
-def solution_17(arr):
-    arr = merge_sort(arr)
-    
-    for i in range(len(arr)):
-        print(arr[i],end="")
 
 def merge_sort(arr):
     if len(arr) < 2:
@@ -32,6 +22,5 @@ def merge_sort(arr):
     merged_arr += high_arr[h:]
     return merged_arr
 
-
-arr = list(input())
-solution_17(arr)
+arr = merge_sort(list(input().strip()))
+print(*arr, sep='')

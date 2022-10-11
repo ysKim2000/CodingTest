@@ -25,6 +25,7 @@ def merge_sort(arr):
             l += 1
         else:
             merged_arr.append(high_arr[h])
+            
             h += 1
     merged_arr += low_arr[l:]
     merged_arr += high_arr[h:]
